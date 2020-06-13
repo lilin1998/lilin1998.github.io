@@ -1,0 +1,21 @@
+html {
+    font-size: 1.5vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $pastel-pink;
+    font-family: Lucida Bright;
+    -webkit-font-smoothing: antialiased;
+    font-size: $m-size;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}

@@ -1,0 +1,27 @@
+.main-footer {
+    
+    background-color: lighten($off-black, 10%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: $s-size;
+    color: $pastel-pink;
+    width: 100%;
+    padding: 0.5em 0;
+    position: relative;
+}
+
+.row-sm {
+    font-size: $s-size;
+    padding-left: 10px;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .main-footer{
+        padding: 1em 0;
+        font-size: $xs-size;
+    }
+
+    .row-sm {
+        font-size: $xs-size;
+        padding-left: 20px;
+    }
+}

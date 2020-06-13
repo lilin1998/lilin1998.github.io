@@ -1,0 +1,14 @@
+.main-footer {
+    border-top: .6rem solid darken($brown, 10%);
+    background-color: $brown;
+    font-size: $m-size;
+    padding-top: 1em;
+    position: relative;
+    display: flex;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .main-footer{
+        padding-top: 2em;
+    }
+}

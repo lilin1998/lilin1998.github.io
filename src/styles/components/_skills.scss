@@ -1,0 +1,51 @@
+.skills {
+    background-color: $barley-grey;
+    font-family: Lucida Bright;
+    color: $green;
+    padding: 10px 0;
+}
+
+.my-6 {
+    padding-top: 5%;
+    font-size: $l-size;
+    font-weight: 300; 
+    text-align: center; 
+}
+
+.my-6:after {
+    content: ""; 
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 6px;
+    border-bottom: 1px solid lighten($green, 20%);
+}
+
+.skill-container {
+    width: 90%;
+    padding-left: 10%;
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: $tablet-portrait-breakpoint) {
+    .my-6:after {
+        width: 40%;
+        padding-top: 10px;
+        border-bottom: 3px solid lighten($green, 20%);
+    }
+
+    .skill-container {
+        padding-bottom: 30px;
+    }
+ }
+
+ @media (min-width: $desktop-breakpoint) {
+    .skills {
+        height: 100vh;
+    }
+
+    .skill-container {
+        padding-top: 30px;
+    }  
+ }

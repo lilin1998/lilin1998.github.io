@@ -1,0 +1,97 @@
+.resume {
+    font-family: Lucida Bright;
+    padding: 10px 0;
+    height: 30vh;
+    background-position: center center;
+    background-blend-mode: darken;
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+}
+
+.my-7 {
+    padding-top: 10vh;
+    padding-left: 18vw;
+    position: relative;
+    color: lighten($white,50%);
+    font-size: $l-size;
+    font-weight: 300; 
+    text-align: left; 
+    top:0;
+    left:0;
+}
+
+.my-8 {
+    padding-top: 0vh;
+    padding-left: 18vw;
+    position: relative;
+    color: lighten($white,50%);
+    font-size: $l-size;
+    font-weight: 300; 
+    text-align: left; 
+    top:0;
+    left:0;
+}
+
+.button{
+    background-color: none;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    color: white;
+    border: 2px solid $pastel-pink; 
+    position: absolute;
+    font-size: $xs-size;
+    top: 22vh;
+    margin-left: 18vw;
+    display: inline-block;
+    
+}
+
+.button:hover {
+    color: $pastel-pink;
+    filter:brightness(150%);
+}
+
+@media (min-width: 647px) {
+    .resume {
+        height: 50vh;
+    }
+
+    .my-7 {
+        padding-top: 15vh;
+        padding-left: 20vw;
+    }
+
+    .my-8 {
+        padding-left: 20vw;
+    }
+
+    .button {
+        padding: 10px 15px;
+        font-size: $s-size;
+        top: 35vh;
+        margin-left: 20vw;
+    }
+   
+ }
+
+ @media (min-width: $desktop-breakpoint) {
+    .resume {
+        height: 100vh;
+    }
+
+    .my-7 {
+        padding-top: 30vh;
+        padding-left: 20vw;
+    }
+
+    .my-8 {
+        padding-left: 20vw;
+    }
+
+    .button {
+        padding: 10px 25px;
+        top: 63vh;
+        margin-left: 20vw;
+    }
+   
+ }

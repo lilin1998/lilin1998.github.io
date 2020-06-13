@@ -1,0 +1,54 @@
+.about {
+    background-color: $white;
+    font-family: Lucida Bright;
+    color: $purple-pink;
+    padding: 10px;
+}
+
+.my-5 {
+    font-size: $l-size;
+    font-weight: 300; 
+    text-align: center; 
+    
+}
+
+.my-5:after {
+    content: ""; 
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 6px;
+    border-bottom: 1px solid $pastel-pink;
+}
+
+.img-responsive__img {
+    position: relative; 
+    overflow: hidden;
+    width: 90%;
+    height: 100%;
+    float: right;
+    padding-right: 10px;
+    object-fit: cover;
+    object-position: top;
+ }
+
+ .col__first {
+     margin-left: 7%;
+    text-align: center;
+    padding: 10% 0;
+   
+ }
+
+ @media (min-width: $tablet-portrait-breakpoint) {
+    .img-responsive__img {
+        width: 80%;
+        height: 90%;
+    }
+
+    .my-5:after {
+        width: 40%;
+        padding-top: 10px;
+        border-bottom: 3px solid $pastel-pink;
+    }
+ }
+
