@@ -1,5 +1,5 @@
 {
-  "homepage": "http://lilin1998.github.io",
+  "homepage": "http://lilin1998.github.io/",
   "name": "application",
   "version": "1.0.0",
   "main": "index.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
