@@ -1,62 +1,63 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-module.exports =(env) => {
-    const isProduction = env ==='production';
+module.exports = (env) => {
+  const isProduction = env === 'production';
+  const CSSExtract = new ExtractTextPlugin('styles.css');
 
     return {
-        entry: './src/app.js',
-        output: {
-            path: path.join(__dirname, 'public'),
-            filename: 'bundle.js',
-            publicPath: '/'
-        },
-        module: {
-            rules: [{
-                loader:'babel-loader',
-                test: /\.js$/,
-                exclude: /node_modules/
-            }, {
-                test: /\.s?css$/,
+    entry: './src/app.js',
+    output: {
+        path: path.join(__dirname, 'public'),
+        filename: 'bundle.js',
+    },
+    module: {
+        rules: [{
+            loader:'babel-loader',
+            test: /\.js$/,
+            exclude: /node_modules/
+        }, {
+            test: /\.s?css$/,
+            use: CSSExtract.extract({
                 use: [
-                    {
-                        loader: 'style-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            sourceMap: true
-                        }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            sourceMap: true
-                        }
+                  {
+                    loader: 'css-loader',
+                    options: {
+                      sourceMap: true
                     }
+                  },
+                  {
+                    loader: 'sass-loader',
+                    options: {
+                      sourceMap: true
+                    }
+                  }
                 ]
-            }, {
-                test: /\.(png|jpg|gif)$/i,
-                use: [
-                    {
-                      loader: 'url-loader',
-                      options: {
-                        limit: 8192
-                      }
-                    }
-                  ]
-            }, {
-                test: /\.pdf$/,
-                use: 'file-loader'
-                
-            }]
-        },
-        devtool: isProduction ? 'source-map' : 'inline-source-map',
-        devServer: {
-            historyApiFallback: true,
-            contentBase: path.join(__dirname, 'public')
-        }
-    };
+              })
+        }, {
+            test: /\.(png|jpg|gif)$/i,
+            use: [
+                {
+                  loader: 'url-loader',
+                  options: {
+                    limit: 8192,
+                    name: 'images/[name]-[hash].[ext]'
+                  }
+                }
+              ]
+        }, {
+            test: /\.pdf$/,
+            use: 'file-loader'
+            
+        }]
+    },
+    plugins: [
+        CSSExtract
+    ],
+    devtool:  isProduction ? 'source-map' : 'cheap-module-eval-source-map',
+    devServer: {
+        historyApiFallback: true,
+        contentBase: path.join(__dirname, 'public')
+    }
+  };
 };
