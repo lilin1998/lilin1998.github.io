@@ -21,13 +21,8 @@ const Skills = () => {
 
 
     return (
-        <div id="skills" className="skills">
-            <div className="container-fluid">
-                <h3 className="my-6">skills</h3>
-                <div className="skill-container">
-                    <SkillBar skills={skills} height={'3vw'} colors={colors}/>
-                </div>
-            </div>
+        <div id="skills" className="skills">    
+          <SkillBar skills={skills} height={'4vw'} colors={colors}/>
         </div>
     );
 }

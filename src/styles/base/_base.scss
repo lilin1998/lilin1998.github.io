@@ -9,13 +9,11 @@ body {
     font-family: Lucida Bright;
     -webkit-font-smoothing: antialiased;
     font-size: $m-size;
-    
+    height: 100%;
 }
 
 button {
     cursor: pointer;
 }
 
-button:disabled {
-    cursor: default;
-}
+

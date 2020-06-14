@@ -1,7 +1,7 @@
 .resume {
     font-family: Lucida Bright;
     padding: 10px 0;
-    height: 30vh;
+    height: 50vh;
     background-position: center center;
     background-blend-mode: darken;
     -webkit-filter: brightness(0.6);
@@ -9,7 +9,7 @@
 }
 
 .my-7 {
-    padding-top: 10vh;
+    padding-top: 20vh;
     padding-left: 18vw;
     position: relative;
     color: lighten($white,50%);
@@ -38,11 +38,12 @@
     padding: 6px 14px;
     color: white;
     border: 2px solid $pastel-pink; 
+    
     position: absolute;
     font-size: $xs-size;
-    top: 22vh;
+    margin-top: 28vh;
     margin-left: 18vw;
-    display: inline-block;
+    display: block;
     
 }
 
@@ -51,11 +52,7 @@
     filter:brightness(150%);
 }
 
-@media (min-width: 647px) {
-    .resume {
-        height: 50vh;
-    }
-
+@media (min-width: 590px) {
     .my-7 {
         padding-top: 15vh;
         padding-left: 20vw;
@@ -68,13 +65,12 @@
     .button {
         padding: 10px 15px;
         font-size: $s-size;
-        top: 35vh;
+        margin-top: 31vh;
         margin-left: 20vw;
     }
-   
  }
 
- @media (min-width: $desktop-breakpoint) {
+ @media (min-width: $tablet-landscape-breakpoint) {
     .resume {
         height: 100vh;
     }
@@ -90,7 +86,7 @@
 
     .button {
         padding: 10px 25px;
-        top: 63vh;
+        margin-top: 58vh;
         margin-left: 20vw;
     }
    

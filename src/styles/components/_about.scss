@@ -1,15 +1,23 @@
 .about {
     background-color: $white;
-    font-family: Lucida Bright;
-    color: $purple-pink;
+    font-family: Arial;
+    color: $off-black;
     padding: 10px;
+    height: 100%;
+ 
 }
 
 .my-5 {
     font-size: $l-size;
     font-weight: 300; 
     text-align: center; 
+    font-family: Lucida Bright;
     
+}
+
+.col-sm-6 {
+    text-align: center; 
+    overflow-wrap: break-word;
 }
 
 .my-5:after {
@@ -17,32 +25,37 @@
     display: block;
     margin: 0 auto;
     width: 30%;
+    height: 100%;
     padding-top: 6px;
     border-bottom: 1px solid $pastel-pink;
 }
 
-.img-responsive__img {
-    position: relative; 
+.circular--portrait {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
     overflow: hidden;
-    width: 90%;
-    height: 100%;
-    float: right;
-    padding-right: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     object-position: top;
- }
-
- .col__first {
-     margin-left: 7%;
-    text-align: center;
-    padding: 10% 0;
-   
- }
+    display: block;
+    margin: 0 auto;
+    
+}
 
  @media (min-width: $tablet-portrait-breakpoint) {
-    .img-responsive__img {
-        width: 80%;
-        height: 90%;
+    .about {
+        padding: 40px;
+       
+    }
+
+    .circular--portrait {
+        width: 200px;
+        height: 200px;
+       
     }
 
     .my-5:after {
@@ -52,3 +65,9 @@
     }
  }
 
+ @media (min-width: $desktop-breakpoint) {
+    .circular--portrait {
+        width: 400px;
+        height: 400px;
+    }
+ }
