@@ -21,7 +21,7 @@ export default class Home extends React.Component {
         window.removeEventListener('resize', this.handleWindowSizeChange.bind(this));
     }
       
-    handleWindowSizeChange = () => {
+    handleWindowSizeChange() {
         this.setState({width: window.innerWidth});
     };
 
