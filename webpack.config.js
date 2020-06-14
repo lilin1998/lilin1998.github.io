@@ -12,20 +12,30 @@ module.exports =(env) => {
         },
         module: {
             rules: [{
+                loader:'babel-loader',
                 test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader:'babel-loader',
-                    options: {
-                        presets: ['env']
-                    }
-                }
+                exclude: /node_modules/
             }, {
                 test: /\.s?css$/,
                 use: [
-                    'style-loader',
-                    'css-loader',
-                    'sass-loader'
+                    {
+                        loader: 'style-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
                 ]
             }, {
                 test: /\.(png|jpg|gif)$/i,
