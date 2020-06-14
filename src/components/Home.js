@@ -32,7 +32,7 @@ export default class Home extends React.Component {
 
         if (isMobile) {
             return (
-                <div id="home" className="image">
+                <div id="home" className="imaging">
                     <img src={mobileImg} className ="img-responsive" alt="Responsive image" width={width}/>
                     <h1>
                         <Typical
@@ -46,7 +46,7 @@ export default class Home extends React.Component {
         } 
         if (isTablet) {
             return (
-                <div id="home" className="image">
+                <div id="home" className="imaging">
                     <img src={tabletImg} className ="img-responsive" alt="Responsive image"  width={width}/>
                     <h1>
                         <Typical
@@ -60,7 +60,7 @@ export default class Home extends React.Component {
         } 
         else {
             return (
-                <div id="home" className="image">
+                <div id="home" className="imaging">
                     <img src={coverImg} className ="img-responsive" alt="Responsive image"  width={width} />
                     <h1>
                         <Typical
