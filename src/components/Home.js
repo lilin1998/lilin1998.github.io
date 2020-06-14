@@ -14,11 +14,11 @@ export default class Home extends React.Component {
     }
       
     componentDidMount() {
-        window.addEventListener('resize', this.handleWindowSizeChange);
+        window.addEventListener('resize', this.handleWindowSizeChange.bind(this));
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', this.handleWindowSizeChange);
+        window.removeEventListener('resize', this.handleWindowSizeChange.bind(this));
     }
       
     handleWindowSizeChange = () => {
