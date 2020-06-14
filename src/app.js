@@ -5,6 +5,6 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-
+console.log('test');
 
 ReactDOM.render(<Portfolio />, document.getElementById('app'));
