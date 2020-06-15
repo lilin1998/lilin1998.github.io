@@ -1,13 +1,15 @@
 .navbar .nav {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    font-size: $m-size;
     letter-spacing: 2px;
 }
 
 .nav a {
   color: $pastel-pink;
-  letter-spacing: 2px;
-  margin-right: 10px;
+  letter-spacing: 1px;
+  margin-right: 18px;
+  
   &:hover { color: white; }
 
 }
@@ -26,6 +28,7 @@
 
   .nav a {
     margin-right: 15px;
+    letter-spacing: 2;
     font-size: $xs-size;
   }
 }
