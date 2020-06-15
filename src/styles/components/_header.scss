@@ -1,0 +1,31 @@
+.navbar .nav {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav a {
+  color: $pastel-pink;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  &:hover { color: white; }
+
+}
+  
+.navbar { background-color: $off-black; }
+  .navbar-nav, .navbar-right {
+    color: #9FFFCB;
+    &:hover { color: white; }
+  }
+
+
+  @media (min-width: $desktop-breakpoint) {
+  .navbar .nav {
+    letter-spacing: 3px;
+  }
+
+  .nav a {
+    margin-right: 15px;
+    font-size: $xs-size;
+  }
+}
