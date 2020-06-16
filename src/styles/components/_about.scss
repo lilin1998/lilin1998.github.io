@@ -8,7 +8,7 @@
 }
 
 .my-5 {
-    font-size: $l-size;
+    font-size: $xl-size;
     font-weight: 300; 
     text-align: center; 
     font-family: Lucida Bright;
@@ -47,7 +47,8 @@
 }
 
 .bio {
-    font-size: 50px;
+    font-size: 12px;
+    padding-bottom: 10px;
 }
 
  @media (min-width: $tablet-portrait-breakpoint) {
@@ -66,6 +67,11 @@
         width: 40%;
         padding-top: 10px;
         border-bottom: 3px solid $pastel-pink;
+    }
+
+    .bio {
+        font-size: 20px;
+        padding-bottom: 10px;
     }
  }
 
