@@ -1,10 +1,10 @@
 # Tan Li Lin's Portfolio
 
-## Steps to update portfolio
+### Steps to update portfolio
 
 ```
-* npm start  : to edit
-* npm run-script build : after edit
-* update index.html
-* push to github
+1. npm start  : to edit
+2. npm run-script build : after edit
+3. update index.html
+4. push to github
 ```
