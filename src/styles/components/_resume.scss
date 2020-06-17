@@ -6,15 +6,16 @@
     background-blend-mode: darken;
     -webkit-filter: brightness(0.6);
     filter: brightness(0.6);
+   
 }
 
 .my-7 {
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-left: 18vw;
     position: relative;
     color: lighten($white,50%);
-    font-size: $l-size;
-    font-weight: 300; 
+    font-size: $xl-size;
+    font-weight: 400; 
     text-align: left; 
     top:0;
     left:0;
@@ -25,23 +26,25 @@
     padding-left: 18vw;
     position: relative;
     color: lighten($white,50%);
-    font-size: $l-size;
-    font-weight: 300; 
+    font-size: $xl-size;
+    font-weight: 400; 
     text-align: left; 
     top:0;
     left:0;
 }
 
 .button{
-    background-color: none;
+    background-color: rgba(0,0,0,0.12);
     text-transform: uppercase;
-    padding: 6px 14px;
-    color: white;
+    font-family: Arial;
+    padding: 10px 20px;
+    color: $white;
     border: 2px solid $pastel-pink; 
-    
+    font-weight: 1000;
     position: absolute;
-    font-size: $xs-size;
-    margin-top: 28vh;
+    font-size: $s-size;
+    letter-spacing: 0.3rem;
+    margin-top: 3vh;
     margin-left: 18vw;
     display: block;
     
@@ -49,7 +52,7 @@
 
 .button:hover {
     color: $pastel-pink;
-    filter:brightness(150%);
+    filter:brightness(80%);
 }
 
 @media (min-width: 590px) {
@@ -63,10 +66,11 @@
     }
 
     .button {
-        padding: 10px 15px;
-        font-size: $s-size;
-        margin-top: 31vh;
+        background-color: rgba(0,0,0,0.1);
+        padding: 15px 50px;
         margin-left: 20vw;
+        font-weight: 800;
+        letter-spacing: 0.2rem;
     }
  }
 
@@ -78,16 +82,23 @@
     .my-7 {
         padding-top: 30vh;
         padding-left: 20vw;
+        font-weight: 300; 
+        font-size: $l-size;
     }
 
     .my-8 {
         padding-left: 20vw;
+        font-weight: 300; 
+        font-size: $l-size;
     }
 
     .button {
-        padding: 10px 25px;
-        margin-top: 58vh;
+        padding: 20px 55px;
+        margin-top: 5vh;
+        font-size: $xs-size;
         margin-left: 20vw;
+       
+        border: 3px solid $pastel-pink;
     }
    
  }
