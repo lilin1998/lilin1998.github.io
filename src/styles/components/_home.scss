@@ -33,6 +33,13 @@
     place-content: center;
  }
 
+ @media (min-width: 590px) {
+   .header-social {
+      top: 80%;
+   }
+}
+
+
  @media (min-width: $tablet-landscape-breakpoint) {
    .header-social {
       top: 80%;
