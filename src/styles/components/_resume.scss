@@ -11,24 +11,24 @@
 
 .my-7 {
     padding-top: 15vh;
-    padding-left: 18vw;
+    padding-right: 10vw;
     position: relative;
     color: lighten($white,50%);
     font-size: $xl-size;
     font-weight: 400; 
-    text-align: left; 
+    text-align: right; 
     top:0;
     left:0;
 }
 
 .my-8 {
     padding-top: 0vh;
-    padding-left: 18vw;
+    padding-right: 10vw;
     position: relative;
     color: lighten($white,50%);
     font-size: $xl-size;
     font-weight: 400; 
-    text-align: left; 
+    text-align: right; 
     top:0;
     left:0;
 }
@@ -37,7 +37,7 @@
     background-color: rgba(0,0,0,0.12);
     text-transform: uppercase;
     font-family: Arial;
-    padding: 10px 20px;
+    padding: 10px 18px;
     color: $white;
     border: 2px solid $pastel-pink; 
     font-weight: 1000;
@@ -45,7 +45,7 @@
     font-size: $s-size;
     letter-spacing: 0.3rem;
     margin-top: 3vh;
-    margin-left: 18vw;
+    margin-left: 43vw;
     display: block;
     
 }
@@ -61,18 +61,18 @@
     }
     
     .my-7 {
-        padding-top: 15vh;
-        padding-left: 20vw;
+        padding-top: 25vh;
+        padding-right: 8vw;
     }
 
     .my-8 {
-        padding-left: 20vw;
+        padding-right: 8vw;
     }
 
     .button {
         background-color: rgba(0,0,0,0.1);
-        padding: 15px 50px;
-        margin-left: 20vw;
+        padding: 15px 45px;
+        margin-left: 50vw;
         font-weight: 800;
         letter-spacing: 0.2rem;
     }
@@ -85,22 +85,22 @@
 
     .my-7 {
         padding-top: 30vh;
-        padding-left: 20vw;
+        padding-right: 10vw;
         font-weight: 300; 
         font-size: $l-size;
     }
 
     .my-8 {
-        padding-left: 20vw;
+        padding-right: 10vw;
         font-weight: 300; 
         font-size: $l-size;
     }
 
     .button {
-        padding: 20px 55px;
+        padding: 20px 50px;
         margin-top: 5vh;
         font-size: $xs-size;
-        margin-left: 20vw;
+        margin-left: 60vw;
        
         border: 3px solid $pastel-pink;
     }
