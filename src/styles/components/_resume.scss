@@ -97,12 +97,18 @@
     }
 
     .button {
-        padding: 20px 50px;
+        padding: 20px 45px;
         margin-top: 5vh;
         font-size: $xs-size;
         margin-left: 60vw;
-       
         border: 3px solid $pastel-pink;
     }
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .button {
+        margin-left: 64vw;
+    }
+}
    
- }
+ 
