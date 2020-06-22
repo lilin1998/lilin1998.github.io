@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/build/static/css/main.319e12b8.chunk.css",
+    "main.css": "/build/static/css/main.ac7d13ce.chunk.css",
     "main.js": "/build/static/js/main.03455af4.chunk.js",
     "main.js.map": "/build/static/js/main.03455af4.chunk.js.map",
     "runtime-main.js": "/build/static/js/runtime-main.670822d8.js",
@@ -9,10 +9,10 @@
     "static/js/2.53638aa2.chunk.js": "/build/static/js/2.53638aa2.chunk.js",
     "static/js/2.53638aa2.chunk.js.map": "/build/static/js/2.53638aa2.chunk.js.map",
     "index.html": "/build/index.html",
-    "precache-manifest.e1605db793cb23e853e17b7f3d16eada.js": "/build/precache-manifest.e1605db793cb23e853e17b7f3d16eada.js",
+    "precache-manifest.3714c4b8a30dd518e06acb1bf241a32e.js": "/build/precache-manifest.3714c4b8a30dd518e06acb1bf241a32e.js",
     "service-worker.js": "/build/service-worker.js",
     "static/css/2.f317a975.chunk.css.map": "/build/static/css/2.f317a975.chunk.css.map",
-    "static/css/main.319e12b8.chunk.css.map": "/build/static/css/main.319e12b8.chunk.css.map",
+    "static/css/main.ac7d13ce.chunk.css.map": "/build/static/css/main.ac7d13ce.chunk.css.map",
     "static/js/2.53638aa2.chunk.js.LICENSE.txt": "/build/static/js/2.53638aa2.chunk.js.LICENSE.txt",
     "static/media/about-img.jpg": "/build/static/media/about-img.faedd492.jpg",
     "static/media/beach-mobile.jpg": "/build/static/media/beach-mobile.34f27875.jpg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.670822d8.js",
     "static/css/2.f317a975.chunk.css",
     "static/js/2.53638aa2.chunk.js",
-    "static/css/main.319e12b8.chunk.css",
+    "static/css/main.ac7d13ce.chunk.css",
     "static/js/main.03455af4.chunk.js"
   ]
 }
