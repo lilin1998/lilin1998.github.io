@@ -71,7 +71,7 @@
     .button {
         background-color: rgba(0,0,0,0.1);
         padding: 10px 25px;
-        margin-left: 47vw;
+        margin-left: 50vw;
         font-weight: 800;
         letter-spacing: 0.2rem;
     }
@@ -117,7 +117,7 @@
         padding: 20px 38px;
         margin-top: 3vh;
         font-size: $xs-size;
-        margin-left: 60vw;
+        margin-left: 62vw;
         border: 3px solid $pastel-pink;
     }
 }
@@ -125,7 +125,7 @@
 @media (min-width: $desktop-breakpoint) {
     .button {
         margin-top: 5vh;
-        margin-left: 63vw;
+        margin-left: 64vw;
     }
 }
    
