@@ -45,3 +45,13 @@
   left: 0;
   right: 0;
 }
+
+.icon-size {
+  font-size: 4rem;
+}
+
+@media (min-width: $tablet-portrait-breakpoint) {
+  .icon-size {
+    font-size: 2.5rem;
+  }
+}

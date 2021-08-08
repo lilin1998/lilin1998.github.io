@@ -20,25 +20,25 @@ const Home = () => {
       </a>
       <div className="header-social">
         <a href="https://www.github.com/lilin1998" className="github social">
-          <FontAwesomeIcon icon={faGithub} size="3x" />
+          <FontAwesomeIcon icon={faGithub} className="icon-size" />
         </a>
         <a href="mailto:lilin1998@gmail.com" className="gmail social">
-          <FontAwesomeIcon icon={faGoogle} size="3x" />
+          <FontAwesomeIcon icon={faGoogle} className="icon-size" />
         </a>
         <a href="https://t.me/poofessionalist" className="telegram social">
-          <FontAwesomeIcon icon={faTelegram} size="3x" />
+          <FontAwesomeIcon icon={faTelegram} className="icon-size" />
         </a>
         <a
           href="https://www.linkedin.com/in/tan-lilin"
           className="linkedin social"
         >
-          <FontAwesomeIcon icon={faLinkedin} size="3x" />
+          <FontAwesomeIcon icon={faLinkedin} className="icon-size" />
         </a>
         <a
           href="https://www.instagram.com/poofessionalist"
           className="instagram social"
         >
-          <FontAwesomeIcon icon={faInstagram} size="3x" />
+          <FontAwesomeIcon icon={faInstagram} className="icon-size" />
         </a>
       </div>
     </div>
