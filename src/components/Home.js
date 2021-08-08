@@ -1,87 +1,48 @@
-import React from 'react';
-import Typical from 'react-typical';
-import coverImg from "../styles/images/beach.jpg";
-import mobileImg from "../styles/images/beach-mobile.jpg";
-import tabletImg from "../styles/images/beach-tablet.jpg";
-import SocialFollow from './SocialFollow';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faGoogle,
+  faTelegram,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
-export default class Home extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-          width: window.innerWidth,
-        };
-    }
-      
-    componentDidMount() {
-        window.addEventListener('resize', this.handleWindowSizeChange.bind(this));
-    }
+const Home = () => {
+  return (
+    <div className="home-container">
+      <p className="home-header">Hey, I'm Li Lin ;)</p>
+      <p className="home-description">
+        I would love to explore the field of frontend development.
+      </p>
+      <a className="button" href="resume.pdf" download="lilin-resume.pdf">
+        Download Resume
+      </a>
+      <div className="header-social">
+        <a href="https://www.github.com/lilin1998" className="github social">
+          <FontAwesomeIcon icon={faGithub} size="3x" />
+        </a>
+        <a href="mailto:lilin1998@gmail.com" className="gmail social">
+          <FontAwesomeIcon icon={faGoogle} size="3x" />
+        </a>
+        <a href="https://t.me/poofessionalist" className="telegram social">
+          <FontAwesomeIcon icon={faTelegram} size="3x" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/tan-lilin"
+          className="linkedin social"
+        >
+          <FontAwesomeIcon icon={faLinkedin} size="3x" />
+        </a>
+        <a
+          href="https://www.instagram.com/poofessionalist"
+          className="instagram social"
+        >
+          <FontAwesomeIcon icon={faInstagram} size="3x" />
+        </a>
+      </div>
+    </div>
+  );
+};
 
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.handleWindowSizeChange.bind(this));
-    }
-      
-    handleWindowSizeChange() {
-        this.setState({width: window.innerWidth});
-    };
-
-    render() {
-        const { width } = this.state.width;
-        const isMobile = width <= 500;
-        const isTablet = width <= 1024;
-
-        if (isMobile) {
-            return (
-                <div id="home" className="imaging">
-                   
-                    <img src={mobileImg} className ="img-responsive" alt="Responsive image" width={width}/>
-                    <h1>
-                        <Typical
-                        steps={['Hello!', 500, 'I am Tan Li Lin', 1000, 'Welcome to my page', 1000]}
-                        loop={Infinity}
-                        wrapper="p"
-                        /> 
-                    </h1>
-                </div>
-                );
-        } 
-        if (isTablet) {
-            return (
-                <div id="home" className="imaging">
-                   
-                    <img src={tabletImg} className ="img-responsive" alt="Responsive image"  width={width}/>
-                    <h1>
-                        <Typical
-                        steps={['Hello!', 500, 'I am Tan Li Lin', 1000, 'Welcome to my page', 1000]}
-                        loop={Infinity}
-                        wrapper="p"
-                        /> 
-                    </h1>
-                </div>
-                );
-        } 
-        else {
-            return (
-                <div id="home" className="imaging">
-                   
-                    <img src={coverImg} className ="img-responsive" alt="Responsive image"  width={width} />
-                    <h1>
-                        <Typical
-                        steps={['Hello!', 500, 'I am Tan Li Lin', 1000, 'Welcome to my portfolio', 1000]}
-                        loop={Infinity}
-                        wrapper="p"
-                        />
-                        
-                        
-                    </h1>
-                    <div className="header-social">
-                    <SocialFollow />
-                    </div> 
-                    
-                    
-                </div>
-            );
-        }
-    }
-}
-
+export default Home;

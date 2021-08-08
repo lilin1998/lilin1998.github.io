@@ -1,27 +1,24 @@
 .main-footer {
-    
-    background-color: lighten($off-black, 10%);
-    font-family: 'Open Sans', sans-serif;
-    font-size: $s-size;
-    color: $pastel-pink;
-    width: 100%;
-    padding: 0.5em 0;
-    position: relative;
+  background-color: #360000;
+  width: 100%;
+  padding: 0.5em 0;
+  position: relative;
 }
 
 .row-sm {
-    font-size: $m-size;
-    padding-left: 18px;
+  font-size: 12px;
+  padding-left: 18px;
+  color: #eff1f3;
 }
 
 @media (min-width: $desktop-breakpoint) {
-    .main-footer{
-        padding: 1em 0;
-        font-size: $xs-size;
-    }
+  .main-footer {
+    padding: 10px 0px;
+    font-size: $xs-size;
+  }
 
-    .row-sm {
-        font-size: $xs-size;
-        padding-left: 25px;
-    }
+  .row-sm {
+    font-size: 12px;
+    padding-left: 25px;
+  }
 }

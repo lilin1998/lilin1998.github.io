@@ -1,83 +1,59 @@
 .about {
-    background-color: $white;
-    font-family: Arial;
-    color: $off-black;
-    padding: 10px;
-    height: 100%;
- 
-}
-
-.my-5 {
-    font-size: $xl-size;
-    font-weight: 300; 
-    text-align: center; 
-    font-family: Lucida Bright;
-    
-}
-
-.col-sm-6 {
-    text-align: center; 
-    overflow-wrap: break-word;
-}
-
-.my-5:after {
-    content: ""; 
-    display: block;
-    margin: 0 auto;
-    width: 30%;
-    height: 100%;
-    padding-top: 6px;
-    border-bottom: 1px solid $pastel-pink;
+  background-color: #eff1f3;
+  color: $off-black;
+  padding: 0 30px;
+  height: 430px;
+  margin: 0 auto !important;
 }
 
 .circular--portrait {
-    border-top-left-radius: 50% 50%;
-    border-top-right-radius: 50% 50%;
-    border-bottom-right-radius: 50% 50%;
-    border-bottom-left-radius: 50% 50%;
-    overflow: hidden;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    object-position: top;
-    display: block;
-    margin: 0 auto;
-    
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  margin: 0 auto;
+  top: 20px;
 }
 
 .bio {
-    font-size: 12px;
-    padding-bottom: 10px;
+  font-size: 14px;
+  margin-top: 40px;
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
- @media (min-width: $tablet-portrait-breakpoint) {
-    .about {
-        padding: 40px;
-       
-    }
+@media (min-width: $mobile-breakpoint) {
+  .about {
+    padding: 0 100px;
+    height: 380px;
+  }
 
-    .circular--portrait {
-        width: 200px;
-        height: 200px;
-       
-    }
+  .bio {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+}
 
-    .my-5:after {
-        width: 40%;
-        padding-top: 10px;
-        border-bottom: 3px solid $pastel-pink;
-    }
+@media (min-width: $tablet-landscape-breakpoint) {
+  .circular--portrait {
+    width: 150px;
+    height: 150px;
+  }
 
-    .bio {
-        font-size: 15px;
-        padding-bottom: 10px;
-    }
- }
+  .about {
+    padding: 0 110px;
+    height: 400px;
+  }
 
- @media (min-width: $desktop-breakpoint) {
-    .circular--portrait {
-        width: 400px;
-        height: 400px;
-    }
- }
+  .bio {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+}

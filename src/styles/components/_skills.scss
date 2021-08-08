@@ -1,20 +1,64 @@
 .skills {
-    background-color: $white;
-    font-family: Arial;
-    color: $green;
-    
+  background: linear-gradient(to top, rgba(250, 0, 0, 0.3), transparent);
+  background-color: #eff1f3;
+  color: $off-black;
+  margin: 0 auto !important;
+  padding-bottom: 30px;
 }
 
+.card {
+  margin: 0 30px 20px;
+  border-radius: 15px !important;
+  border: 1px solid #eff1f3 !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
 
- @media (min-width: 590px) {
-    .skills {
-        padding-top: 125px;
-    }
- }
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
 
+.card-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  margin: -5px 0px 15px !important;
+}
 
- @media (min-width: $desktop-breakpoint) {
-    .skills {
-        padding-top: 190px;
-    }
- }
+.card-description {
+  font-size: 14px;
+}
+
+.card-link {
+  color: #360000;
+  font-weight: 600;
+}
+
+.card-link:hover {
+  text-decoration: underline !important;
+  color: #360000;
+  text-decoration-color: #360000 !important;
+}
+
+@media (min-width: $mobile-breakpoint) {
+  .skills {
+    padding: 20px 70px;
+  }
+
+  .card {
+    margin: 0 5px 30px;
+  }
+}
+
+@media (min-width: $tablet-landscape-breakpoint) {
+  .skills {
+    padding: 50px 70px;
+  }
+  .card {
+    margin: 0 5px 20px;
+  }
+
+  .card-subtitle {
+    margin: -12px 0px 15px !important;
+  }
+}
